@@ -1,0 +1,25 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{box-sizing: inherit;}
+
+header{
+  height: 15vh;
+  nav{
+    display: flex;
+    justify-content: space-around;
+    .red-logos{
+      display: flex;
+      img{
+        width:80px;
+      }
+    }
+    .rbt-logo{
+      display: flex;
+    }
+    .tt-logo{
+      display: flex;
+    }
+    .help-profile{
+      display: flex;
+    }
+  }
+}
