@@ -1,25 +1,96 @@
-*{margin: 0;padding: 0;box-sizing: border-box;}
-html{box-sizing: inherit;}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-header{
-  height: 15vh;
-  nav{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  background-color: #fff;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  position: sticky;
+  top: 0;
+  nav {
+    width: 80%;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: space-around;
-    .red-logos{
+    justify-content: space-between;
+    .red-logos {
       display: flex;
-      img{
-        width:80px;
+      width: 40%;
+      justify-content: space-around;
+    }
+    .or {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: xx-large;
+      opacity: .25;
+    }
+    .rb-logo {
+      img {
+        width: 80px;
       }
     }
-    .rbt-logo{
+    .rbt-logo {
       display: flex;
+      flex-direction: column;
+      background-color: #d84e55;
+      color: #eee;
+      border-radius: 10px;
+      padding: 8px;
+      gap: 4px;
+      font-weight: bold;
+      img {
+        height: 25px;
+        filter: brightness(0) invert(1);
+      }
     }
-    .tt-logo{
+  }
+  .tt-logo {
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 38px;
+      padding: 5px;
+      filter: grayscale(1) brightness(0);
+    }
+    .sup {
       display: flex;
+      flex-direction: row;
+      sup {
+        padding: 2.5px 10px;
+        background-color: #60b681;
+        height: min-content;
+        margin-left: -10px;
+        border-radius: 15px;
+      }
     }
-    .help-profile{
-      display: flex;
-    }
+  }
+  .help-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .profile,
+  .help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
 }
