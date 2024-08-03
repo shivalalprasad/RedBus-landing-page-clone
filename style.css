@@ -98,7 +98,7 @@ header {
 .banner {
   display: flex;
   flex-direction: column;
-  gap: 25%;
+  gap: 17.5%;
   background-image: url(./assets/Homepage-header-2000.webp);
   height: 520px;
   background-size: cover;
@@ -109,6 +109,7 @@ header {
   justify-content: center;
   .banner-head {
     font-size: xx-large;
+    margin-top: 20px;
     color: #fff;
     font-weight: bolder;
   }
