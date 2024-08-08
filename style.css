@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  z-index: 999;
   background-color: #fff;
   padding-top: 2.5vh;
   padding-bottom: 2.5vh;
@@ -72,6 +73,8 @@ header {
       display: flex;
       flex-direction: row;
       sup {
+        color: #fff;
+        font-weight: bold;
         padding: 2.5px 10px;
         background-color: #60b681;
         height: min-content;
@@ -129,23 +132,24 @@ header {
   .search-svg {
     width: 26px;
   }
-  .text-area{
+  .text-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     padding-left: 20px;
-    input{
+    input {
       height: 25%;
       outline: none;
       border: none;
     }
   }
-  .revert{
+  .revert {
     position: relative;
     left: 12.5px;
   }
-  .from,.to{
+  .from,
+  .to {
     display: flex;
     height: 100%;
     width: 25%;
@@ -153,29 +157,29 @@ header {
     align-items: center;
     border-right: 1.5px solid #e0e0e0;
   }
-  .date{
+  .date {
     display: flex;
     padding-left: 20px;
     gap: 7px;
     align-items: center;
     width: 25%;
-    .input-area{
+    .input-area {
       margin-left: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 7px;
-      .date-op{
-        opacity: .9;
+      .date-op {
+        opacity: 0.9;
       }
-      .date-date{
+      .date-date {
         font-weight: bold;
         color: #000;
       }
     }
   }
-  .search-busses{
+  .search-busses {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,50 +194,52 @@ header {
   }
 }
 
-
-.offers{
+.offers {
   position: relative;
   top: -50px;
   background-color: #fff;
   border-radius: 25px;
   width: 85vw;
   margin-left: auto;
-  margin-right: auto;;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
-  padding:5px 2vw;
+  padding: 5px 2vw;
   justify-content: space-between;
   gap: 2.5vh;
-  .offer-head{
+  .offer-head {
     margin: 20px 10px;
     display: flex;
     align-content: center;
     justify-content: space-between;
 
-
-    button{
+    button {
       color: navy;
       font-size: larger;
       background-color: #fff;
-      padding:8px;
-      border: 1px solid #cfcfcf9c;;
+      padding: 8px;
+      border: 1px solid #cfcfcf9c;
       border-radius: 18px;
       cursor: pointer;
     }
   }
-  .offer-corosal::-webkit-scrollbar{
+  .offer-corosal::-webkit-scrollbar {
     display: none;
   }
-  .offer-corosal{
+  .offer-corosal {
     display: flex;
     gap: 25px;
     overflow: scroll hidden;
     scroll-behavior: smooth;
   }
-  .offer{
+  .offer {
     cursor: pointer;
     height: 170px;
-    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
+    background-image: linear-gradient(
+      71.04deg,
+      rgb(12, 57, 139) -6.92%,
+      rgb(62, 118, 216) 109.43%
+    );
     width: 300px;
     border-radius: 15px;
     padding: 8px;
@@ -241,63 +247,189 @@ header {
     /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
-    .offer-img{
+    .offer-img {
       display: flex;
       justify-content: center;
       align-items: center;
-      img{
+      img {
         border-radius: 40px;
         width: 70px;
         height: 70px;
       }
     }
-    .offer-details{
+    .offer-details {
       color: #fff;
       width: 70%;
       display: flex;
       gap: 8px;
       justify-content: center;
       flex-direction: column;
-      .bus{
+      .bus {
         width: fit-content;
         font-size: large;
-        padding: .5px 5px;
+        padding: 0.5px 5px;
         border-radius: 10px;
-        background-color:rgb(255 255 255 / 20%);
+        background-color: rgb(255 255 255 / 20%);
       }
-      .offer-desc{
+      .offer-desc {
         font-weight: bolder;
       }
-      .offer-validity{
+      .offer-validity {
         font-size: small;
       }
-      .offer-coupon-code{
+      .offer-coupon-code {
         display: flex;
         gap: 20px;
-        .offer-code{
+        .offer-code {
           background-color: rgb(255 255 255 / 20%);
           border: 1px dashed #fff;
-          padding:2.5px 5px ;
+          padding: 2.5px 5px;
           color: #fff;
           font-size: xx-small;
         }
-        .copy-logo{
-          img{
+        .copy-logo {
+          img {
             height: 15px;
           }
         }
       }
     }
   }
-
 }
 
-#offer2{
-  background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%);
+#offer2 {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(39, 57, 101) -6.92%,
+    rgb(80, 210, 149) 109.43%
+  );
 }
-#offer3{
-  background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);
+#offer3 {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(72, 0, 4) -6.92%,
+    rgb(216, 78, 85) 109.43%
+  );
 }
-#offer4{
-  background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+#offer4 {
+  background-image: linear-gradient(
+    71.04deg,
+    rgb(14, 113, 67) -6.92%,
+    rgb(115, 236, 179) 109.43%
+  );
+}
+
+.rtc-card-scrool {
+  display: flex;
+  gap: 25px;
+  overflow: scroll hidden;
+  scroll-behavior: smooth;
+}
+.rtc-card-scrool::-webkit-scrollbar {
+  display: none;
+}
+.rtc-buses {
+  background-color: #fff;
+  border-radius: 25px;
+  width: 88vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 2vw;
+  justify-content: space-between;
+
+  .rtc-buses-head {
+    margin: 20px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    button {
+      color: navy;
+      font-size: larger;
+      background-color: #fff;
+      padding: 8px;
+      border: 1px solid #cfcfcf9c;
+      border-radius: 18px;
+      cursor: pointer;
+    }
+  }
+
+  .rtc-card {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 300px;
+
+    .rtc-info {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 2;
+      background-color: #fff;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      .rtc-bus-details {
+        height: 80px;
+        display: flex;
+        gap: 25px;
+        align-items: center;
+
+        .rtc-bus-nara {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          .rtc-bus-rating {
+            width: max-content;
+            font-size: 14px;
+            display: flex;
+            gap: 3px;
+            padding: 3px 6px;
+            color: #fff;
+            background: #007b2d;
+            border-radius: 8px;
+          }
+          .rtc-bus-rating::before {
+            content: url(./assets/star.svg);
+          }
+        }
+      }
+    }
+
+    .rtc-detail {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 0 10%;
+
+      .rtc-red {
+        background-color: #f2f2f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 12.5px;
+        height: 25px;
+      }
+    }
+  }
+  .offer-rtc-bus {
+    font-size: small;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: end;
+    position: relative;
+    background: #f0e0e1;
+    top: -15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+    padding-bottom: 8px;
+  }
 }
