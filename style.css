@@ -189,3 +189,112 @@ header {
     border-bottom-right-radius: 32px;
   }
 }
+
+
+.offers{
+  position: relative;
+  top: -50px;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: space-between;
+  gap: 2.5vh;
+  .offer-head{
+    margin: 20px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+
+    button{
+      color: navy;
+      font-size: larger;
+      background-color: #fff;
+      padding: 1.5px 5px;
+      border: 1px solid #cdcdcd;
+      border-radius: 12px;
+    }
+  }
+  .offer-corosal::-webkit-scrollbar{
+    display: none;
+  }
+  .offer-corosal{
+    display: flex;
+    gap: 25px;
+    overflow: scroll;
+  }
+  .offer{
+    height: 170px;
+    background-image: linear-gradient(71.04deg, rgb(12, 57, 139) -6.92%, rgb(62, 118, 216) 109.43%);
+    width: 30%;
+    border-radius: 15px;
+    padding: 8px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    .offer-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+        border-radius: 40px;
+        width: 70px;
+        height: 70px;
+      }
+    }
+    .offer-details{
+      color: #fff;
+      width: 70%;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-direction: column;
+      .bus{
+        width: fit-content;
+        font-size: large;
+        padding: .5px 5px;
+        border-radius: 10px;
+        background-color:rgb(255 255 255 / 20%);
+      }
+      .offer-desc{
+        font-weight: bolder;
+      }
+      .offer-validity{
+        font-size: small;
+      }
+      .offer-coupon-code{
+        display: flex;
+        gap: 20px;
+        .offer-code{
+          background-color: rgb(255 255 255 / 20%);
+          border: 1px dashed #fff;
+          padding:2.5px 5px ;
+          color: #fff;
+          font-size: xx-small;
+        }
+        .copy-logo{
+          img{
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+#offer2{
+  background-image: linear-gradient(71.04deg, rgb(39, 57, 101) -6.92%, rgb(80, 210, 149) 109.43%);
+}
+#offer3{
+  background-image: linear-gradient(71.04deg, rgb(72, 0, 4) -6.92%, rgb(216, 78, 85) 109.43%);
+}
+#offer4{
+  background-image: linear-gradient(71.04deg, rgb(14, 113, 67) -6.92%, rgb(115, 236, 179) 109.43%);
+}
