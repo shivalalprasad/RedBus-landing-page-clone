@@ -666,3 +666,41 @@ header {
     }
   }
 }
+
+/* Global Presence */
+
+.global-presence {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+
+  .global-presence-head {
+    font-size: large;
+    font-weight: bold;
+    margin: 24px auto;
+  }
+
+  .global-presence-countries {
+    display: flex;
+    justify-content: space-around;
+
+    .country {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      .country-name {
+        border-radius: 25px;
+        padding: 8px;
+      }
+      .country-name:hover {
+        background-color: #faf9f6;
+        transition: all 250ms ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      }
+    }
+  }
+}
