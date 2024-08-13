@@ -673,6 +673,7 @@ header {
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 
   .global-presence-head {
     font-size: large;
@@ -702,5 +703,26 @@ header {
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       }
     }
+  }
+}
+
+/* red bus description  stats here*/
+
+.red-bus-desc {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  line-height: 25px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  a {
+    color: blue;
+    cursor: pointer;
+  }
+  #read-more {
+    display: none;
   }
 }
