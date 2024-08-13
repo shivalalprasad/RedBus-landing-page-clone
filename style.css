@@ -331,6 +331,7 @@ header {
   display: none;
 }
 .rtc-buses {
+  cursor: pointer;
   background-color: #fff;
   border-radius: 25px;
   width: 85vw;
@@ -396,6 +397,7 @@ header {
           }
           .rtc-bus-rating::before {
             content: url(./assets/star.svg);
+            fill: #fff;
           }
         }
       }
@@ -437,7 +439,7 @@ header {
 }
 
 .train-tickets {
-  width: 85vw;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -511,4 +513,109 @@ header {
   background: url(./assets/train-ticket-bg.svg);
   background-position: right;
   background-repeat: no-repeat;
+}
+
+/* app install section start */
+
+.app-install {
+  background: url(./assets/appinstall.svg);
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+  width: 80vw;
+  margin: 48px auto;
+  color: #fff;
+  height: 425px;
+
+  .app-install-head {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 15px 0;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  .app-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .app-install-item-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 262.5px;
+    margin-left: 50px;
+  }
+
+  .app-install-item-enjoy {
+    background-color: #fff;
+    color: #4a4a4a;
+    padding: 24px;
+    border-radius: 24px;
+
+    .app-pros {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .app-pros-item {
+        display: flex;
+        gap: 5px;
+      }
+    }
+    .stores {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      padding: 8px;
+
+      .play-store,
+      .apple-store {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+      .rating {
+        display: flex;
+        gap: 10px;
+        font-size: large;
+        font-weight: bold;
+        color: #000;
+        align-items: baseline;
+      }
+
+      .play,
+      .apple {
+        font-weight: bold;
+        color: #000;
+      }
+      .downloads {
+        font-size: small;
+      }
+    }
+  }
+
+  .app-install-item-download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+
+    .app-download-text,
+    .app-download-on {
+      font-size: large;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .app-download-logos {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
 }
