@@ -619,3 +619,50 @@ header {
     }
   }
 }
+
+/* pbo starts here */
+
+.pbo {
+  width: 80vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(251, 202, 65);
+  border-radius: 48px;
+  margin-bottom: 100px;
+
+  .red-bus-pros {
+    background-color: rgb(35, 48, 88);
+    border-radius: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+
+    .pros-item {
+      display: flex;
+      color: #fff;
+      padding: 25px 30px;
+      gap: 25px;
+
+      .pros-ico {
+        display: flex;
+        align-items: center;
+      }
+      .pros-text {
+        display: flex;
+        flex-direction: column;
+
+        .pros-text-head {
+          font-size: 28px;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        .pros-text-normal {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
