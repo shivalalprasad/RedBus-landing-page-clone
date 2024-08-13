@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 html {
   box-sizing: inherit;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
@@ -713,10 +713,12 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  margin-bottom: 50px;
   line-height: 25px;
 
-  h2 {
-    margin-bottom: 20px;
+  .head {
+    font-size: 40px;
+    margin-bottom: 40px;
   }
   a {
     color: blue;
@@ -724,5 +726,74 @@ header {
   }
   #read-more {
     display: none;
+  }
+}
+
+/* bus booking deals on red bus */
+
+.bus-booking-deals {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  display: flex;
+  line-height: 30px;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: 40px;
+    font-weight: normal;
+  }
+  .booking-deals {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    padding: 40px;
+    grid-template-columns: 1fr 6fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #c2c2c2;
+    color: #4a4a4a;
+
+    .booking-deals-logo {
+      padding: 20px;
+    }
+    .count-discount {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .discount {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        h2 {
+          font-weight: 500;
+        }
+        h1 {
+          font-size: 32px;
+          color: #d84e55;
+          font-weight: 600;
+        }
+      }
+      .count {
+        font-weight: bold;
+        font-size: 16px;
+        span {
+          color: #d84e55;
+        }
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+    padding: 16px 24px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #d84e55;
+    border-radius: 8px;
+    border: none;
   }
 }

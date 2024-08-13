@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header starts here  -->
     <header>
       <nav>
         <div class="red-logos">
@@ -73,7 +74,7 @@
         </div>
       </nav>
     </header>
-
+    <!-- search bus tickets banner -->
     <div class="banner">
       <div class="banner-head-p">
         <span class="banner-head"
@@ -115,7 +116,7 @@
         <div class="search-busses"><div>Search Busses</div></div>
       </div>
     </div>
-
+    <!--online  booking offers  -->
     <div class="offers">
       <div class="offer-head">
         <h2>TRENDING OFFERS</h2>
@@ -188,7 +189,7 @@
         </div>
       </div>
     </div>
-
+    <!-- RTC partner lists -->
     <div class="rtc-buses">
       <div class="rtc-buses-head">
         <h2>GOVERMENT BUSES</h2>
@@ -308,7 +309,7 @@
         </div>
       </div>
     </div>
-
+    <!-- train ticket Booking -->
     <div class="train-tickets">
       <div class="tt-info">
         <div class="tt-about">
@@ -357,7 +358,7 @@
         <img src="./assets/rail-Pop.webp" alt="" />
       </div>
     </div>
-
+    <!-- app indtaltion help banner -->
     <div class="app-install">
       <div class="app-install-head">ENJOY THE APP!</div>
       <div class="app-install-item-head">
@@ -420,7 +421,7 @@
         <div class="app-install-item"></div>
       </div>
     </div>
-
+    <!-- primo bus operators -->
     <div class="pbo">
       <div>
         <img
@@ -459,7 +460,7 @@
         </div>
       </div>
     </div>
-
+    <!-- global presence of red bus -->
     <div class="global-presence">
       <div class="global-presence-head">Global Presence</div>
       <div class="global-presence-countries">
@@ -511,19 +512,22 @@
         </div>
       </div>
     </div>
-
+    <!-- some summary about red bus -->
     <div class="red-bus-desc">
       <script>
+        //making the read more and read less functionable
         var readMore = function () {
+          //read more function
           document.getElementById("read-more").style.display = `block`;
           document.getElementById("read-more-a").style.display = `none`;
         };
         function readLess() {
+          //read less function
           document.getElementById("read-more").style.display = `none`;
           document.getElementById("read-more-a").style.display = `block`;
         }
       </script>
-      <h2>BOOK BUS TICKETS ONLINE</h2>
+      <div class="head">BOOK BUS TICKETS ONLINE</div>
       <div>
         <p id="read-less">
           redBus is India's largest brand for online bus ticket booking and
@@ -587,6 +591,33 @@
           buses, and more.
           <br /><a onclick="readLess()" id="read-less-a">Read less</a>
         </p>
+      </div>
+    </div>
+    <!-- bus booking deals on red bus  -->
+    <div class="bus-booking-deals">
+      <h1>Bus Booking redDeals on redBus</h1>
+      <p>
+        Don't miss out on these incredible offers, book your bus tickets now and
+        travel with convenience and affordability. Hurry, grab the best bus
+        booking deals before they're gone!
+      </p>
+      <div class="booking-deals">
+        <div class="booking-deals-logo">
+          <img width="55" src="./assets/rdc-redbus-logo.svg" alt="" />
+        </div>
+        <div class="booking-deals-item count-discount">
+          <div class="discount">
+            <h2>Unlock Unbeatable Exclusive redDeals!</h2>
+            <h1>20% OFF</h1>
+          </div>
+          <div class="count">
+            <span> 3382 &nbsp; </span> Deals&nbsp; | &nbsp;<span>
+              1444 &nbsp;</span
+            >
+            Bus Operators&nbsp; |&nbsp; <span> 299882&nbsp; </span> Routes
+          </div>
+        </div>
+        <div class="booking-deals-item"><button>Book now</button></div>
       </div>
     </div>
   </body>
